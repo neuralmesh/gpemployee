@@ -1,6 +1,5 @@
-# src/models/employee.py
-
 import yaml
+from .responsegetter import get_response
 
 class Employee:
     def __init__(self, name, role):
@@ -9,6 +8,9 @@ class Employee:
 
     def __str__(self):
         return f"Employee(name={self.name}, role={self.role})"
+
+    def get_response(userprompt):
+        get_response(userprompt)
 
     @staticmethod
     def load_config(config_path):
