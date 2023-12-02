@@ -8,7 +8,8 @@ class Employee:
 
     def __str__(self):
         return f"Employee(name={self.name}, role={self.role})"
-
+    
+    @staticmethod
     def get_response(userprompt):
         get_response(userprompt)
 
