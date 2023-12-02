@@ -2,6 +2,12 @@
 
 This document provides instructions on how to build and run the Docker container for the gpemployee project.
 
+## justrun.sh
+
+```bash
+bash ./scripts/justrun.sh
+```
+
 ## Prerequisites
 
 Before proceeding, ensure you have Docker installed on your machine. If Docker is not installed, please follow the [official Docker installation guide](https://docs.docker.com/get-docker/).
