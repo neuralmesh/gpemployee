@@ -1,14 +1,12 @@
 # src/main.py
 
 from fastapi import FastAPI
-from .employee import Employee
-
+from .model import get_model
 app = FastAPI()
 
-# Load employee config and create an Employee instance
-employee = Employee.load_config("docs/employee/config.yml")
+model = get_model()
 
 @app.get("/")
 def read_root():
-    return {"message": str(employee)}
+    return {"model": str(model)}
 
