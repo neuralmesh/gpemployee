@@ -1,10 +1,10 @@
 # src/main.py
 
 from fastapi import FastAPI
-from .model import model
+from .model import get_model
 app = FastAPI()
 
-model = model.get_model()
+model = get_model()
 
 @app.get("/")
 def read_root():
